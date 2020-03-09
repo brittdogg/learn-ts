@@ -11,6 +11,7 @@ if (isDone) {
     console.log("Stopped doing stuff!");
 }
 
+// Super practical example
 let aaronsTeamSucks: boolean = true;
 if (aaronsTeamSucks) {
     console.log("Aaron sucks!");
