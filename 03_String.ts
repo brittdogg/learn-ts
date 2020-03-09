@@ -6,18 +6,24 @@
 let color: string = "blue";
 color = 'red';
 
-// You can "print" strings - and string representations of numbers.
+// You can insert variables into strings, like Mad Libs. This is called "interpolation."
 let fullName: string = `Pat Toner`;
 let age: number = 39;
 
-// You can insert variables into strings like Mad Libs. This is called "interpolation."
-let sentence: string = `Hello, my name is ${ fullName }.
-
-I'll be ${ age + 1 } years old next month.`;
-console.log(sentence);
+let paragraph: string = `Hello, my name is ${ fullName }.
+I'm ${ age } years old today.`;
+console.log(paragraph);
 
 // There are set ways of representing special characters in strings.
 // For example, instead of pressing Enter, you can use \n to represent a line break.
-sentence = "Hello, my name is " + fullName + ".\n\n" +
- "I'll be " + (age + 1) + " years old next month.";
-console.log(sentence); // output is the same as above
+paragraph = "Hello, my name is " + fullName + ".\n" +
+ "I'm " + (age) + " years old today.";
+console.log(paragraph); // output is the same as above
+
+// You can use + to "add" strings together.
+// Instead of being added together, the strings are "concatenated."
+let newAge: number = age + 1; // adds numbers together like normal
+let sentence: string = "I, " + fullName + ", turn " + newAge + " tomorrow."; // concatenates
+console.log(sentence);
+// Even if your item is a number, like newAge above,
+// it gets concatenated if you try to "add" it to a string.
